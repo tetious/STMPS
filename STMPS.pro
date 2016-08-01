@@ -1,4 +1,4 @@
-update=Sun 31 Jul 2016 10:00:03 AM EDT
+update=Sun 31 Jul 2016 11:36:04 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,13 @@ LibName29=valves
 LibName30=general
 LibName31=gl-power
 LibName32=stmps
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
