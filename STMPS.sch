@@ -719,9 +719,9 @@ F 3 "" H 6780 2430 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 5800 3410 0    60   ~ 0
-USB_DP
+USB_DM
 Text Label 5800 3510 0    60   ~ 0
-USB_DN
+USB_DP
 $Comp
 L USB_OTG P103
 U 1 1 57A53FFA
@@ -749,41 +749,13 @@ F 3 "" H 2630 2230 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 2630 2230
-Text Label 2230 2450 3    60   ~ 0
-USB_DP
-Text Label 2130 2450 3    60   ~ 0
-USB_DN
-Wire Wire Line
-	1610 1390 1610 2450
 Wire Wire Line
 	1610 2450 2030 2450
 NoConn ~ 2330 2450
-$Comp
-L AOZ8904 U101
-U 1 1 57A62CBA
-P 2000 3060
-F 0 "U101" H 2160 2850 60  0000 C CNN
-F 1 "AOZ8904" H 2010 3280 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 2000 3100 60  0001 C CNN
-F 3 "" H 2000 3100 60  0000 C CNN
-F 4 "AOZ8904CIL" H 2000 3060 60  0001 C CNN "MPN"
-	1    2000 3060
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1680 2960 1680 2450
-Connection ~ 1680 2450
-Text Label 1680 3150 2    60   ~ 0
-USB_DN
-Text Label 1680 3050 2    60   ~ 0
+Text Label 2090 2630 2    60   ~ 0
+USB_DM
+Text Label 2320 2620 0    60   ~ 0
 USB_DP
-NoConn ~ 2320 3050
-NoConn ~ 2320 3150
-Wire Wire Line
-	2320 2960 2550 2960
-Wire Wire Line
-	2550 2960 2550 2450
-Connection ~ 2550 2450
 $Comp
 L C_Small C106
 U 1 1 57A7896C
@@ -1224,13 +1196,13 @@ Wire Wire Line
 Wire Wire Line
 	1050 3660 1280 3660
 Wire Wire Line
-	1280 3460 1150 3460
+	1150 3460 1280 3460
 Wire Wire Line
-	1150 3460 1150 3210
+	1150 3210 1150 3460
 Connection ~ 1150 3300
 Connection ~ 1050 3300
 Wire Wire Line
-	1100 4110 1100 3560
+	1100 3560 1100 4110
 Wire Wire Line
 	1100 3560 1280 3560
 Wire Wire Line
@@ -1247,4 +1219,54 @@ Wire Wire Line
 	1150 3210 1050 3210
 Text GLabel 8410 3600 0    60   Input ~ 0
 +12v
+Text Notes 2440 2730 0    60   ~ 0
+DP may need a pullup
+$Comp
+L AOZ8904 U101
+U 1 1 57A62CBA
+P 2220 3030
+F 0 "U101" H 2120 2830 60  0000 C CNN
+F 1 "AOZ8904" H 2230 3250 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 2220 3070 60  0001 C CNN
+F 3 "" H 2220 3070 60  0000 C CNN
+F 4 "AOZ8904CIL" H 2220 3030 60  0001 C CNN "MPN"
+	1    2220 3030
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1610 1390 1610 2930
+Wire Wire Line
+	2230 2450 2230 2620
+Wire Wire Line
+	2230 2620 2820 2620
+Wire Wire Line
+	2820 2620 2820 3020
+Wire Wire Line
+	2820 3020 2540 3020
+Wire Wire Line
+	2130 2450 2130 2630
+Wire Wire Line
+	2130 2630 1730 2630
+Wire Wire Line
+	1730 2630 1730 3120
+Wire Wire Line
+	1730 3120 1900 3120
+Wire Wire Line
+	1610 2930 1900 2930
+Connection ~ 1610 2450
+$Comp
+L GND #PWR?
+U 1 1 57A7DE49
+P 2580 2930
+F 0 "#PWR?" H 2580 2680 50  0001 C CNN
+F 1 "GND" H 2580 2780 50  0000 C CNN
+F 2 "" H 2580 2930 50  0000 C CNN
+F 3 "" H 2580 2930 50  0000 C CNN
+	1    2580 2930
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2540 2930 2580 2930
+NoConn ~ 2540 3120
+NoConn ~ 1900 3020
 $EndSCHEMATC
