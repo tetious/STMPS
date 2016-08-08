@@ -318,11 +318,11 @@ Text Label 9830 1820 2    60   ~ 0
 X_DIR
 Text Label 9830 1950 2    60   ~ 0
 X_STEP
-Text Label 4460 5430 2    60   ~ 0
+Text Label 4460 4330 2    60   ~ 0
 X_ENABLE
-Text Label 4460 5530 2    60   ~ 0
+Text Label 4460 4130 2    60   ~ 0
 X_DIR
-Text Label 4460 5630 2    60   ~ 0
+Text Label 4460 4230 2    60   ~ 0
 X_STEP
 Text GLabel 4330 2640 2    60   Input ~ 0
 +3.3v
@@ -356,11 +356,11 @@ Text Label 5810 5310 0    60   ~ 0
 Z_DIR
 Text Label 5810 5410 0    60   ~ 0
 Z_STEP
-Text Label 4460 4330 2    60   ~ 0
+Text Label 4460 5630 2    60   ~ 0
 E0_ENABLE
-Text Label 4460 4130 2    60   ~ 0
+Text Label 4460 5530 2    60   ~ 0
 E0_STEP
-Text Label 4460 4230 2    60   ~ 0
+Text Label 4460 5430 2    60   ~ 0
 E0_DIR
 Text Label 6330 3610 0    60   ~ 0
 SWDIO
@@ -443,7 +443,7 @@ Text Label 4460 4730 2    60   ~ 0
 E0_PWM
 Text Label 8420 2930 2    60   ~ 0
 E0_PWM
-Text Label 4470 3980 2    60   ~ 0
+Text Label 5800 3010 0    60   ~ 0
 BED_PWM
 Text Label 8410 3840 2    60   ~ 0
 BED_PWM
@@ -552,7 +552,7 @@ U 1 1 57A53FFA
 P 2230 2150
 F 0 "P103" H 2555 2025 50  0000 C CNN
 F 1 "USB_OTG" H 2230 2350 50  0000 C CNN
-F 2 "Connect:USB_Micro-B" V 2180 2050 50  0001 C CNN
+F 2 "stmps:USB_Micro-B-ebay" V 2180 2050 50  0001 C CNN
 F 3 "" V 2180 2050 50  0000 C CNN
 	1    2230 2150
 	1    0    0    -1  
@@ -569,9 +569,9 @@ F 3 "" H 2630 2230 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 2330 2450
-Text Label 2090 2630 2    60   ~ 0
+Text Label 2130 2630 2    60   ~ 0
 USB_DM
-Text Label 2320 2620 0    60   ~ 0
+Text Label 2230 2620 0    60   ~ 0
 USB_DP
 $Comp
 L C_Small C106
@@ -817,10 +817,6 @@ F 3 "" H 920 1580 50  0000 C CNN
 	1    920  1580
 	1    0    0    -1  
 $EndComp
-Text Label 5810 4720 0    60   ~ 0
-SCL
-Text Label 5810 4820 0    60   ~ 0
-SDA
 $Comp
 L +12V #PWR017
 U 1 1 57AE7E36
@@ -841,7 +837,7 @@ NoConn ~ 5810 4220
 NoConn ~ 5810 4320
 NoConn ~ 4460 5130
 NoConn ~ 5810 5210
-NoConn ~ 4460 4430
+NoConn ~ 5810 5020
 NoConn ~ 4460 4530
 NoConn ~ 4460 4630
 NoConn ~ 9840 5640
@@ -852,8 +848,6 @@ Text Label 1610 1910 0    60   ~ 0
 +5v
 Text GLabel 8410 3600 0    60   Input ~ 0
 +12v
-Text Notes 2440 2730 0    60   ~ 0
-DP may need a pullup
 $Comp
 L AOZ8904 U101
 U 1 1 57A62CBA
@@ -1165,19 +1159,7 @@ Wire Wire Line
 Wire Wire Line
 	2230 2450 2230 2620
 Wire Wire Line
-	2230 2620 2820 2620
-Wire Wire Line
-	2820 2620 2820 3020
-Wire Wire Line
-	2820 3020 2540 3020
-Wire Wire Line
 	2130 2450 2130 2630
-Wire Wire Line
-	2130 2630 1730 2630
-Wire Wire Line
-	1730 2630 1730 3120
-Wire Wire Line
-	1730 3120 1900 3120
 Wire Wire Line
 	1610 2930 1900 2930
 Connection ~ 1610 2450
@@ -1202,7 +1184,7 @@ Wire Wire Line
 Wire Wire Line
 	7690 2570 7740 2570
 Connection ~ 7720 2570
-Text Label 5810 5020 0    60   ~ 0
+Text Label 4460 4430 2    60   ~ 0
 CHIP_1_WIRE
 Text Label 7690 2920 3    60   ~ 0
 CHIP_1_WIRE
@@ -1227,5 +1209,29 @@ NoConn ~ 4460 5330
 NoConn ~ 5810 5120
 NoConn ~ 5800 2810
 NoConn ~ 5800 2910
-NoConn ~ 5800 3010
+NoConn ~ 4470 3980
+Text Label 1900 3120 2    60   ~ 0
+USB_DP
+Text Label 2540 3020 0    60   ~ 0
+USB_DM
+$Comp
+L R_Small R107
+U 1 1 57A98C2D
+P 2830 2500
+F 0 "R107" V 2910 2500 50  0000 C CNN
+F 1 "4.7k" V 2760 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2760 2500 50  0001 C CNN
+F 3 "" H 2830 2500 50  0000 C CNN
+	1    2830 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2730 2500 2230 2500
+Connection ~ 2230 2500
+Text GLabel 3030 2500 2    60   Input ~ 0
++3.3v
+Wire Wire Line
+	2930 2500 3030 2500
+NoConn ~ 5810 4720
+NoConn ~ 5810 4820
 $EndSCHEMATC
