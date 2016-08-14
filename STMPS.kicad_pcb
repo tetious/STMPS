@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.2+e4-6225~38~ubuntu16.04.1-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.3+e1-6302~38~ubuntu16.04.1-stable)
 
   (general
     (links 294)
     (no_connects 0)
-    (area 94.920999 109.652999 180.923001 154.507001)
+    (area 89.050386 55.271999 182.64994 163.332401)
     (thickness 1.6)
     (drawings 32)
     (tracks 989)
@@ -25,7 +25,7 @@
   )
 
   (setup
-    (last_trace_width 0.254)
+    (last_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
     (user_trace_width 0.8128)
@@ -53,7 +53,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFEF7F)
+    (visible_elements FFFEEF7F)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -4345,10 +4345,10 @@
   (gr_text Fan (at 131.445 128.524) (layer F.SilkS) (tstamp 57A25367)
     (effects (font (size 1.016 1.016) (thickness 0.254)))
   )
-  (gr_text "Bed\n" (at 146.304 120.396 360) (layer F.SilkS) (tstamp 57A25364)
+  (gr_text "Bed\n" (at 146.304 120.396) (layer F.SilkS) (tstamp 57A25364)
     (effects (font (size 1.016 1.016) (thickness 0.254)))
   )
-  (gr_text E0 (at 133.858 120.396 360) (layer F.SilkS) (tstamp 57A2535F)
+  (gr_text E0 (at 133.858 120.396) (layer F.SilkS) (tstamp 57A2535F)
     (effects (font (size 1.016 1.016) (thickness 0.254)))
   )
   (gr_text 3v (at 107.696 151.384) (layer F.SilkS) (tstamp 57A25350)
@@ -4382,7 +4382,7 @@
   (gr_text 12v (at 104.394 112.268 90) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.254)))
   )
-  (gr_text +12v (at 155.448 111.76 360) (layer F.SilkS) (tstamp 57A252DD)
+  (gr_text +12v (at 155.448 111.76) (layer F.SilkS) (tstamp 57A252DD)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 142.24 57.404) (end 142.494 63.5) (layer Dwgs.User) (width 0.2))
