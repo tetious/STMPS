@@ -3,5 +3,6 @@
 *.bck
 *-cache.lib
 ~*
-gerbers.zip
+gerber/*
 *.rpt
+.~lock*

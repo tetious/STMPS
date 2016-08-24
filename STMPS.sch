@@ -52,7 +52,7 @@ U 1 1 579D4D3A
 P 3900 2290
 F 0 "JP101" H 3900 2440 50  0000 C CNN
 F 1 "BOOT0" H 3900 2210 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 3900 2290 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3900 2290 50  0001 C CNN
 F 3 "" H 3900 2290 50  0000 C CNN
 	1    3900 2290
 	0    -1   -1   0   
@@ -1234,4 +1234,6 @@ Wire Wire Line
 	2930 2500 3030 2500
 NoConn ~ 5810 4720
 NoConn ~ 5810 4820
+Text GLabel 3420 2920 1    60   Input ~ 0
++3.3v
 $EndSCHEMATC
