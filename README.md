@@ -6,7 +6,7 @@ from the Printrboard, RAMPS 1.4, and the RepRap project.
 
 **ALPHA-3**
 
-![alt text](https://github.com/tetious/STMPS/raw/master/src//img/stmps-a3.png)
+![a3](https://github.com/tetious/STMPS/raw/master/img/stmps-a3.png)
 
 This board is intended to work with Ambroz Bizjak's astonishingly fantastic 
 [aprinter](https://github.com/ambrop72/aprinter) firmware. Configuration files and guidance will be
