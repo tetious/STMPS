@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -85,19 +85,6 @@ F 3 "" H 5440 4160 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5830 4330
-$Comp
-L CONN_01X02 P701
-U 1 1 57A29756
-P 6400 3420
-AR Path="/57A291CF/57A29756" Ref="P701"  Part="1" 
-AR Path="/57A2D9CC/57A29756" Ref="P801"  Part="1" 
-F 0 "P801" H 6400 3570 50  0000 C CNN
-F 1 "OUT" V 6500 3420 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 6400 3420 50  0001 C CNN
-F 3 "" H 6400 3420 50  0000 C CNN
-	1    6400 3420
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5440 4060 5440 3980
 Wire Wire Line
@@ -174,4 +161,8 @@ Wire Wire Line
 	5440 4330 6190 4330
 Wire Wire Line
 	6190 4330 6190 4180
+Text HLabel 6200 3370 2    60   Input ~ 0
+OUT+
+Text HLabel 6200 3470 2    60   Input ~ 0
+OUT-
 $EndSCHEMATC

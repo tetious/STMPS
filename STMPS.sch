@@ -80,28 +80,6 @@ F 3 "" H 4300 1830 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C109
-U 1 1 579D6E02
-P 3530 3110
-F 0 "C109" H 3555 3210 50  0000 L CNN
-F 1 "1uf" H 3555 3010 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3568 2960 50  0001 C CNN
-F 3 "" H 3530 3110 50  0000 C CNN
-	1    3530 3110
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C107
-U 1 1 579D6EB4
-P 3240 3110
-F 0 "C107" H 3265 3210 50  0000 L CNN
-F 1 "100nf" H 3190 3010 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3278 2960 50  0001 C CNN
-F 3 "" H 3240 3110 50  0000 C CNN
-	1    3240 3110
-	1    0    0    -1  
-$EndComp
-$Comp
 L STM32F411RCTx U103
 U 1 1 579E299E
 P 5750 3900
@@ -111,17 +89,6 @@ F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 5240 5140 50  0001 R TNN
 F 3 "" H 5750 3900 50  0000 C CNN
 F 4 "STM32F411RCT6" H 5750 3900 60  0001 C CNN "MPN"
 	1    5750 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C105
-U 1 1 579E3169
-P 2880 1550
-F 0 "C105" H 2905 1650 50  0000 L CNN
-F 1 "100nf" H 2830 1450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2918 1400 50  0001 C CNN
-F 3 "" H 2880 1550 50  0000 C CNN
-	1    2880 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -138,12 +105,12 @@ $EndComp
 $Comp
 L GND #PWR02
 U 1 1 579E61DA
-P 3530 3350
-F 0 "#PWR02" H 3530 3100 50  0001 C CNN
-F 1 "GND" H 3530 3200 50  0000 C CNN
-F 2 "" H 3530 3350 50  0000 C CNN
-F 3 "" H 3530 3350 50  0000 C CNN
-	1    3530 3350
+P 4170 3380
+F 0 "#PWR02" H 4170 3130 50  0001 C CNN
+F 1 "GND" H 4170 3230 50  0000 C CNN
+F 2 "" H 4170 3380 50  0000 C CNN
+F 3 "" H 4170 3380 50  0000 C CNN
+	1    4170 3380
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -378,20 +345,18 @@ $EndComp
 Text Label 6330 3710 0    60   ~ 0
 SWCLK
 $Comp
-L CONN_01X06 P106
+L CONN_01X05 P106
 U 1 1 57A164C1
-P 7340 3660
-F 0 "P106" H 7340 4010 50  0000 C CNN
-F 1 "SWD" V 7440 3660 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 7340 3660 50  0001 C CNN
-F 3 "" H 7340 3660 50  0000 C CNN
-	1    7340 3660
+P 7340 3710
+F 0 "P106" H 7340 4060 50  0000 C CNN
+F 1 "SWD" V 7440 3710 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 7340 3710 50  0001 C CNN
+F 3 "" H 7340 3710 50  0000 C CNN
+	1    7340 3710
 	1    0    0    1   
 $EndComp
 Text GLabel 7140 3910 0    60   Input ~ 0
 +3.3v
-Text Label 6340 3410 0    60   ~ 0
-SWO
 Text Label 6330 3510 0    60   ~ 0
 NRST
 $Comp
@@ -421,7 +386,9 @@ U 57A291CF
 F0 "E0_FET" 60
 F1 "high_power_fet.sch" 60
 F2 "PWR" I L 8420 2690 60 
-F3 "PWM_IN" I L 8420 2930 60 
+F3 "PWM_IN" I L 8420 2580 60 
+F4 "OUT+" I L 8420 2920 60 
+F5 "OUT-" I L 8420 3020 60 
 $EndSheet
 $Sheet
 S 8410 3360 870  720 
@@ -429,7 +396,9 @@ U 57A2D9CC
 F0 "BED_FET" 60
 F1 "high_power_fet.sch" 60
 F2 "PWR" I L 8410 3600 60 
-F3 "PWM_IN" I L 8410 3840 60 
+F3 "PWM_IN" I L 8410 3490 60 
+F4 "OUT+" I L 8410 3810 60 
+F5 "OUT-" I L 8410 4010 60 
 $EndSheet
 Text GLabel 8420 1730 0    60   Input ~ 0
 +12v
@@ -441,11 +410,11 @@ Text Label 8420 1960 2    60   ~ 0
 FAN_PWM
 Text Label 4460 4730 2    60   ~ 0
 E0_PWM
-Text Label 8420 2930 2    60   ~ 0
+Text Label 8420 2580 2    60   ~ 0
 E0_PWM
 Text Label 5800 3010 0    60   ~ 0
 BED_PWM
-Text Label 8410 3840 2    60   ~ 0
+Text Label 8410 3490 2    60   ~ 0
 BED_PWM
 $Comp
 L CONN_01X03 P105
@@ -573,17 +542,6 @@ Text Label 2130 2630 2    60   ~ 0
 USB_DM
 Text Label 2230 2620 0    60   ~ 0
 USB_DP
-$Comp
-L C_Small C106
-U 1 1 57A7896C
-P 3120 1550
-F 0 "C106" H 3145 1650 50  0000 L CNN
-F 1 "100nf" H 3070 1450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3158 1400 50  0001 C CNN
-F 3 "" H 3120 1550 50  0000 C CNN
-	1    3120 1550
-	1    0    0    -1  
-$EndComp
 $Comp
 L C_Small C108
 U 1 1 57A78A83
@@ -921,18 +879,6 @@ Wire Wire Line
 	4300 1390 4300 1450
 Connection ~ 4300 1390
 Wire Wire Line
-	3240 2920 4470 2920
-Wire Wire Line
-	3240 2920 3240 3010
-Connection ~ 3240 2920
-Wire Wire Line
-	3240 3210 3240 3350
-Wire Wire Line
-	3530 2920 3530 3010
-Connection ~ 3530 2920
-Wire Wire Line
-	3530 3210 3530 3350
-Wire Wire Line
 	4070 1390 4070 1450
 Connection ~ 4070 1390
 Wire Wire Line
@@ -959,22 +905,9 @@ Connection ~ 4070 1730
 Wire Wire Line
 	4470 3050 4170 3050
 Wire Wire Line
-	3240 3350 4170 3350
-Connection ~ 3530 3350
-Wire Wire Line
 	2640 1390 5000 1390
 Wire Wire Line
-	2880 1390 2880 1450
-Wire Wire Line
-	3120 1450 3120 1390
-Connection ~ 3120 1390
-Wire Wire Line
-	2880 1730 2880 1650
-Wire Wire Line
 	1760 1730 4300 1730
-Wire Wire Line
-	3120 1650 3120 1730
-Connection ~ 3120 1730
 Wire Wire Line
 	3650 2490 3650 2530
 Connection ~ 4110 2490
@@ -1009,10 +942,8 @@ Wire Wire Line
 	3050 3730 3190 3730
 Wire Wire Line
 	3390 3730 4460 3730
-Connection ~ 2880 1390
 Wire Wire Line
 	2260 1690 2260 1730
-Connection ~ 2880 1730
 Wire Wire Line
 	1760 1650 1760 1730
 Connection ~ 2260 1730
@@ -1037,7 +968,7 @@ Wire Wire Line
 Wire Wire Line
 	1610 1390 1960 1390
 Wire Wire Line
-	4330 2640 4330 2790
+	4330 2640 4330 2920
 Connection ~ 4330 2790
 Wire Wire Line
 	7140 3610 5800 3610
@@ -1047,10 +978,6 @@ Wire Wire Line
 	6700 3810 6700 3710
 Wire Wire Line
 	6700 3710 5800 3710
-Wire Wire Line
-	6270 4420 6270 3410
-Wire Wire Line
-	6270 3410 7140 3410
 Wire Wire Line
 	7140 3510 6180 3510
 Wire Wire Line
@@ -1074,8 +1001,6 @@ Wire Wire Line
 	1200 4700 1200 4610
 Connection ~ 1100 4700
 Wire Wire Line
-	5810 4420 6270 4420
-Wire Wire Line
 	2630 2450 2430 2450
 Wire Wire Line
 	2630 2050 2630 2450
@@ -1085,7 +1010,7 @@ Wire Wire Line
 Wire Wire Line
 	4170 3050 4170 3100
 Wire Wire Line
-	4170 3350 4170 3300
+	4170 3300 4170 3380
 Wire Wire Line
 	4110 2790 4110 2750
 Wire Wire Line
@@ -1234,6 +1159,47 @@ Wire Wire Line
 	2930 2500 3030 2500
 NoConn ~ 5810 4720
 NoConn ~ 5810 4820
-Text GLabel 3420 2920 1    60   Input ~ 0
-+3.3v
+Wire Wire Line
+	4330 2920 4470 2920
+NoConn ~ 5810 4420
+$Comp
+L CONN_01X02 P111
+U 1 1 57CB13CD
+P 8170 2970
+F 0 "P111" H 8170 3120 50  0000 C CNN
+F 1 "EO" V 8270 2970 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 8170 2970 50  0001 C CNN
+F 3 "" H 8170 2970 50  0000 C CNN
+	1    8170 2970
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P110
+U 1 1 57CB1962
+P 7970 3960
+F 0 "P110" H 7970 4210 50  0000 C CNN
+F 1 "BED" V 8070 3960 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-04_04x2.54mm_Straight" H 7970 3960 50  0001 C CNN
+F 3 "" H 7970 3960 50  0000 C CNN
+	1    7970 3960
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8410 3810 8170 3810
+Wire Wire Line
+	8170 3910 8260 3910
+Wire Wire Line
+	8260 3910 8260 3810
+Connection ~ 8260 3810
+Wire Wire Line
+	8410 4010 8170 4010
+Wire Wire Line
+	8170 4110 8260 4110
+Wire Wire Line
+	8260 4110 8260 4010
+Connection ~ 8260 4010
+Wire Wire Line
+	8370 3020 8420 3020
+Wire Wire Line
+	8370 2920 8420 2920
 $EndSCHEMATC
