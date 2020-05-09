@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:STMPS-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,7 +32,6 @@ LIBS:valves
 LIBS:general
 LIBS:gl-power
 LIBS:stmps
-LIBS:STMPS-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -136,11 +136,12 @@ Wire Wire Line
 	5940 3410 5940 3370
 Connection ~ 5940 3370
 $Comp
-L Led_Small D701
+L LED_Small D701
 U 1 1 57A9EC55
 P 6060 3660
 AR Path="/57A291CF/57A9EC55" Ref="D701"  Part="1" 
 AR Path="/57A2D9CC/57A9EC55" Ref="D801"  Part="1" 
+AR Path="/57A9EC55" Ref="D801"  Part="1" 
 F 0 "D801" H 6070 3760 50  0000 L CNN
 F 1 "r" H 5885 3560 50  0001 L CNN
 F 2 "LEDs:LED_0805" V 6060 3660 50  0001 C CNN

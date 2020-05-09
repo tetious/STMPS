@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:STMPS-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,7 +32,6 @@ LIBS:valves
 LIBS:general
 LIBS:gl-power
 LIBS:stmps
-LIBS:STMPS-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268

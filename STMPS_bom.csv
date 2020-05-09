@@ -1,0 +1,60 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,MPN
+1,Unpolarized capacitor,C_Small,C108 C110 C111 C112 C201 C202 C204 C301 C302 C304 C401 C402 C404 C501 C502 C504,100nf,C_0805_HandSoldering,16,,
+2,Polarised capacitor,CP_Small,C101,100uf,c_elec_6.3x5.8,1,,35TZV100M6.3X8
+3,Polarised capacitor,CP1_Small,C203 C303 C403 C503,100uf,c_elec_6.3x5.8,4,,UWT1V101MCL1GS
+4,Unpolarized capacitor,C_Small,C102 C116 C117,10uf,C_0805_HandSoldering,3,,
+5,Unpolarized capacitor,C_Small,C103 C104,20pf,C_0805_HandSoldering,2,,
+6,Unpolarized capacitor,C_Small,C113 C114,4.7uf,C_0805_HandSoldering,2,,
+7,"LED, small symbol",LED_Small,D101,12v_PWR,LED_0805,1,,
+8,"LED, small symbol",LED_Small,D102,3v_PWR,LED_0805,1,,
+9,"Schottky diode, small symbol",D_Schottky_Small,D103 D601,D_Schottky_Small,SOD-123,2,,DB2X41100L DB2J41100L
+10,"LED, small symbol",LED_Small,D701 D801,r,LED_0805,2,,
+11,"Connector, single row, 01x02, pin header",CONN_01X02,JP101,BOOT0,Pin_Header_Straight_1x02,1,,
+12,"Jumper, normally closed",Jumper_NC_Small,JP203 JP303 JP403 JP503,MS1,MADW__SMD-solder-bridge-narrow,4,,
+13,"Jumper, normally closed",Jumper_NC_Small,JP202 JP302 JP402 JP502,MS2,MADW__SMD-solder-bridge-narrow,4,,
+14,"Jumper, normally closed",Jumper_NC_Small,JP201 JP301 JP401 JP501,MS3,MADW__SMD-solder-bridge-narrow,4,,
+15,"Connector, double row, 02x03, pin header",CONN_02X03,P102,12v,Pin_Header_Straight_2x03,1,,
+16,"Connector, single row, 01x04, pin header",CONN_01X04,P101,12v IN,5EHDRC_1x04,1,,
+17,"Connector, single row, 01x04, pin header",CONN_01X04,P110,BED,Molex_KK-6410-04_04x2.54mm_Straight,1,,
+18,"Connector, single row, 01x02, pin header",CONN_01X02,P107,BED_THERM,Pin_Header_Straight_1x02,1,,
+19,"Connector, single row, 01x02, pin header",CONN_01X02,P104,E0_THERM,Pin_Header_Straight_1x02,1,,
+20,"Connector, single row, 01x02, pin header",CONN_01X02,P111,EO,Molex_KK-6410-02_02x2.54mm_Straight,1,,
+21,"Connector, single row, 01x02, pin header",CONN_01X02,P601,LP_OUT,Pin_Header_Straight_1x02,1,,
+22,"Connector, single row, 01x04, pin header",CONN_01X04,P201 P301 P401 P501,MOT,Pin_Header_Straight_1x04,4,,
+23,"Connector, single row, 01x05, pin header",CONN_01X05,P106,SWD,Pin_Header_Straight_1x05,1,,
+24,USB mini/micro connector,USB_OTG,P103,USB_OTG,USB_Micro-B-ebay,1,,
+25,"Connector, single row, 01x03, pin header",CONN_01X03,P105,X_STOP,Pin_Header_Straight_1x03,1,,
+26,"Connector, single row, 01x03, pin header",CONN_01X03,P108,Y_STOP,Pin_Header_Straight_1x03,1,,
+27,"Connector, single row, 01x03, pin header",CONN_01X03,P109,Z_STOP,Pin_Header_Straight_1x03,1,,
+28,Transistor N-MOSFET with substrate diode (general),Q_NMOS_GDS,Q701 Q801,IPP039N04L,TO-220_Neutral123_Vertical,2,,IPP039N04LGXKSA1-ND
+29,Transistor N-MOSFETwith substrate diode (general),Q_NMOS_GSD,Q601,SSM3K333,SOT-23_Handsoldering,1,,SSM3K333RLFCT-ND
+30,"Resistor, small symbol",R_Small,R204 R205 R304 R305 R404 R405 R504 R505,0.1,R_0805_HandSoldering,8,,
+31,"Resistor, small symbol",R_Small,R702 R802,100,R_0805_HandSoldering,2,,
+32,"Resistor, small symbol",R_Small,R104 R202 R203 R302 R303 R402 R403 R502 R503 R601 R701 R801,100k,R_0805_HandSoldering,12,,
+33,"Resistor, small symbol",R_Small,R201 R301 R401 R501,200k,R_0805_HandSoldering,4,,
+34,"Resistor, small symbol",R_Small,R103,220,R_0805_HandSoldering,1,,
+35,"Resistor, small symbol",R_Small,R105 R106 R107,4.7k,R_0805_HandSoldering,3,,
+36,"Resistor, small symbol",R_Small,R102,56,R_0805_HandSoldering,1,,
+37,"Resistor, small symbol",R_Small,R101 R703 R803,560,R_0805_HandSoldering,3,,
+38,Potentionmeter,POT,RV201 RV301 RV401 RV501,100k,BOURNS-TC33X-2,4,,TC33X-2-104E
+39,,A5984,U201 U301 U401 U501,A5984,TSSOP-24_4.4x7.8mm_Pitch0.65mm,4,,A5984GLPTR-T
+40,,AOZ8904,U101,AOZ8904,SOT-23-6_Handsoldering,1,,AOZ8904CIL
+41,,CHIP-TOP,U105,CHIP-TOP,CHIP-MIN,1,,
+42,,LM1117,U102,LM1117-3.3v,TO-252-2Lead,1,,
+43,,STM32F411RCTx,U103,STM32F411RCTx,LQFP-64_10x10mm_Pitch0.5mm,1,,STM32F411RCT6
+44,"Two pin crystal, small symbol",Crystal_Small,Y101,Crystal,Crystal_HC49-U_Vertical,1,,ABL-8.000MHZ-B2
+
+
+
+
+
+Component Groups:,44
+Component Count:,113
+Fitted Components:,113
+Number of PCBs:,1
+Total components:,113
+Schematic Version:,
+Schematic Date:,
+BoM Date:,Thu 20 Jul 2017 09:48:18 PM EDT
+Schematic Source:,/home/greg/Boards/STMPS/STMPS.sch
+KiCad Version:,Eeschema 4.0.7-e0-6372~58~ubuntu16.04.1

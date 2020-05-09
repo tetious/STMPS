@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:STMPS-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,7 +32,6 @@ LIBS:valves
 LIBS:general
 LIBS:gl-power
 LIBS:stmps
-LIBS:STMPS-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -520,7 +520,7 @@ L USB_OTG P103
 U 1 1 57A53FFA
 P 2230 2150
 F 0 "P103" H 2555 2025 50  0000 C CNN
-F 1 "USB_OTG" H 2230 2350 50  0000 C CNN
+F 1 "USB_OTG" H 1850 2200 50  0000 C CNN
 F 2 "stmps:USB_Micro-B-ebay" V 2180 2050 50  0001 C CNN
 F 3 "" V 2180 2050 50  0000 C CNN
 	1    2230 2150
@@ -685,7 +685,7 @@ E0_THERM
 Text Label 5800 2410 0    60   ~ 0
 BED_THERM
 $Comp
-L Led_Small D102
+L LED_Small D102
 U 1 1 57AAEDCA
 P 2740 840
 F 0 "D102" H 2690 965 50  0000 L CNN
@@ -718,7 +718,7 @@ F 3 "" H 2740 1130 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D101
+L LED_Small D101
 U 1 1 57AB512D
 P 1230 910
 F 0 "D101" H 1180 1035 50  0000 L CNN
